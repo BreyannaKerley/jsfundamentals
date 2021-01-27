@@ -1,0 +1,430 @@
+body {
+    background-color: rgb(18, 55, 155); 
+}
+
+
+.forehead {
+    background-color: rgb(212, 196, 183);
+    
+    width: 25em; 
+    height: 20em;
+
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 8em;
+    right: 0;
+    z-index: 0;
+
+    margin: auto;
+
+    border-radius: 70% 30% 10% 10%;
+}
+
+.cranium {
+
+    width: 29em;
+    height: 29em;
+
+    position: absolute; 
+    top: 1em;
+    left: 13em;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+
+    margin: auto;
+
+    border-radius: 50%;
+    background-color: rgb(212, 196, 183);
+}
+
+.rightCheek {
+
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 21em;
+    left: 0;
+    bottom: 0;
+    right: 18em;
+    z-index: 5;
+
+    margin: auto;
+
+    border-left: 100px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 220px solid rgb(148, 54, 30);
+  }
+
+.rightEyeSocket {
+    display: block;
+    width: 80px;
+    height: 40px;
+    transform: skew(3deg);
+
+    position: absolute;
+    top: 10em;
+    left: 0;
+    bottom: 0;
+    right: 16em;
+    z-index: 30;
+
+    margin: auto;
+
+    background-color: rgb(175, 198, 214);
+    border-radius: 100px  / 50px;
+}
+
+.leftEyeSocket {
+    display: block;
+    width: 80px;
+    height: 60px;
+   
+
+    position: absolute;
+    top: 10em;
+    left: 19em;
+    bottom: 0;
+    right: 15em;
+    z-index: 30;
+
+    margin: auto;
+
+    background-color: rgb(167, 157, 156);
+    border-radius: 100px / 100px; 
+}
+
+.leftIris {
+ 
+    display: block;
+    width: 60px;
+    height: 50px;
+    
+    position: absolute;
+    top: 10em;
+    left: 19em;
+    bottom: 0;
+    right: 15em;
+    z-index: 35;
+
+    margin: auto;
+    
+    border-radius: 50px  / 50px  ; 
+    background-color: red;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0%{
+        background_color: red;
+    }
+    100% {
+        background-color: gray;
+    }
+}
+
+.rightIris {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 10em;
+    left: 0;
+    bottom: 0;
+    right: 16em;
+    z-index: 35;
+
+    margin: auto;
+
+    background-color: rgb(54, 70, 141);
+    border-radius: 50px  / 50px  ; 
+}
+
+.noseBridge {
+    width: 35px;
+    height: 130px;
+    transform: skew(-20deg);
+
+    position: absolute;
+    top: 25em;
+    left: 0;
+    bottom: 0;
+    right: 12em;
+    z-index: 50;
+
+    margin: auto;
+
+    border-left: 27px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 100px solid rgb(173, 142, 116);
+
+}
+
+.leftCheekBone {
+
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 24em;
+    left: 15em;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    margin: auto;
+
+    border-left: 45px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 90px solid rgb(243, 94, 57);
+  }
+
+.leftBeard {
+
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 35em;
+    left: 18em;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    margin: auto;
+
+    border-left: 10px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid rgb(212, 196, 183);
+  }
+
+.beardSquare {
+    
+    width: 120px;
+    height: 100px;
+
+    position: absolute;
+    top: 80em;
+    left: 5em;
+    bottom: 0;
+    right: 0;
+
+    margin: auto;
+
+    border-left: 60px solid transparent;
+    border-right: 190px solid transparent;
+    border-top: 200px solid rgb(201, 97, 0);
+    animation: updown 3s ease infinite; 
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+  
+
+.topHairOne {
+    
+    width: 15em; 
+    height: 9em;
+
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 24em;
+    right: 2em;
+    z-index: 40;
+
+    margin: auto;
+
+    border-radius: 700% 170% 750% 200%;
+    background-color: rgb(196, 105, 0);
+
+  }
+
+.topHairTwo {
+    
+    width: 10em; 
+    height: 12em;
+    transform: skew(10deg);
+
+    position: absolute; 
+    top: 0;
+    left: 35em;
+    bottom: 11em;
+    right: 0;
+    z-index: 40;
+
+    margin: auto;
+
+    border-radius: 400% 770% 350% 500%;
+    background-color: rgb(196, 105, 0);
+
+  }
+
+.topHairThree {
+    
+    width: 11em; 
+    height: 9em;
+    transform: skew(47deg);
+
+    position: absolute; 
+    top: 0;
+    left: 24em;
+    bottom: 24em;
+    right: 0;
+    z-index: 40;
+
+    margin: auto;
+
+    border-radius: 400% 770% 350% 500%;
+    background-color: rgb(196, 105, 0);
+
+  }
+
+.starburstBottom {
+    background-color: white;
+    
+    height: 15em; 
+    width: 15em;
+
+    position: absolute; 
+    top: 30em;
+    left: 0;
+    bottom: 0;
+    right: 50em;
+    
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: 5px 5px 50px rgb(251, 255, 0);
+    animation: leftright 3s ease infinite
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.starburstTwo {
+    background-color: rgb(238, 204, 13);
+    
+    height: 13em; 
+    width: 13em;
+
+    position: absolute; 
+    top: 28em;
+    left: 0;
+    bottom: 0;
+    right: 52em;
+    
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: 5px 5px 50px rgb(255, 174, 0);
+    animation: leftright 3s ease infinite
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.starburstFour {
+    background-color: rgb(255, 196, 0);
+    
+    height: 12em; 
+    width: 12em;
+
+    position: absolute; 
+    top: 31em;
+    left: 0;
+    bottom: 0;
+    right: 47em;
+    
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: 5px 5px 50px rgb(255, 174, 0);
+    animation: leftright 3s ease infinite
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.starburstThree {
+    background-color: rgb(244, 245, 176);
+    
+    height: 12em; 
+    width: 12em;
+
+    position: absolute; 
+    top: 29em;
+    left: 0;
+    bottom: 0;
+    right: 53em;
+    
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: 5px 5px 50px rgb(251, 255, 0);
+    animation: leftright 3s ease infinite
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
